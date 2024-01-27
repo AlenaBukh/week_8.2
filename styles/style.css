@@ -1,0 +1,92 @@
+.navbar {
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 4 строки с равной высотой */
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки с равной шириной */
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: 700px
+}
+
+.grid-item {
+    border: 1px;
+    padding: 10px;
+    text-align: start;
+}
+
+.grid-item_one {
+    text-align: center;
+}
+
+.grid-item_two {
+    padding-left: 50px;
+    height: 200px;
+}
+
+.grid-item_three {
+    padding-left: 50px;
+}
+
+.name {
+    margin-left: 70px;
+    margin-top: 30px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+}
+
+.grid-item_bg {
+    background-color: #EC615B;
+}
+
+.news {
+    color: white;
+}
+
+.btn {
+    background-color: #5222D0;
+}
+
+.col {
+    justify-content:space-around
+}
+
+.row-cols-lg-6>* {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 45%;
+}
+
+.btn {
+    width: 50%;
+    border-radius: 30px;
+    background-color: #5222D0;
+}
+
+.card-img-top {
+    width: 20%;
+}
+
+.btn {
+    width: 50%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Медиа-запрос для уменьшения количества колонок на маленьких экранах */
+    .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Медиа-запрос для изменения на одну колонку на экранах очень маленького размера */
+    .grid-container {
+    grid-template-columns: 1fr;
+    }
+}
